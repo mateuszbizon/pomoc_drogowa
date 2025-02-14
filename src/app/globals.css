@@ -10,3 +10,13 @@
     --light2: #ffefca;
     --green: #00a088;
 }
+
+@layer components {
+    .heading1 {
+        @apply text-4xl md:text-5xl lg:text-6xl font-bold
+    }
+
+    .bigger-text {
+        @apply text-2xl md:text-3xl
+    }
+}

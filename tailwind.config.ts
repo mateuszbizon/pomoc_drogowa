@@ -16,6 +16,11 @@ export default {
         "light2": "var(--light2)",
         "green": "var(--green)",
       },
+      backgroundImage: {
+        "car-header-small": "url(/car-header-small.jpg)",
+        "car-header-medium": "url(/car-header-medium.jpg)",
+        "car-header-big": "url(/car-header-big.jpg)",
+      }
     },
   },
   plugins: [],
