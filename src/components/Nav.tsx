@@ -3,8 +3,8 @@ import Container from './Container'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button, buttonVariants } from './ui/button'
-import { Bars3Icon } from '@heroicons/react/16/solid'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
+import NavMobile from './nav/NavMobile'
 
 function Nav() {
   return (
@@ -61,9 +61,7 @@ function Nav() {
                 </Link>
 
                 <div className='lg:hidden'>
-                    <Button variant={"icon"} size={"icon"}>
-                        <Bars3Icon />
-                    </Button>
+                    <NavMobile />
                 </div>
             </div>
         </Container>
