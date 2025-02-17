@@ -4,7 +4,7 @@ type ContainerProps = PropsWithChildren
 
 function Container({ children }: ContainerProps) {
   return (
-    <div className='xl:container px-5 mx-auto'>
+    <div className='max-w-[1300px] px-5 mx-auto'>
         {children}
     </div>
   )
