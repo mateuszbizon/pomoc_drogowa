@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function HeroSection() {
   return (
-    <header className='relative h-screen bg-car-header-small md:bg-car-header-medium xl:bg-car-header-big bg-center bg-cover z-0'>
+    <header className='relative h-screen bg-car-header-small md:bg-car-header-medium xl:bg-car-header-big bg-center bg-cover bg-fixed z-0'>
         <div className='absolute inset-0 bg-black/40 -z-10'></div>
         <Container>
             <div className='h-screen flex flex-col justify-center gap-5 max-w-[800px]'>
