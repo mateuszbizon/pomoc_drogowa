@@ -20,6 +20,9 @@ export default {
         "car-header-small": "url(/car-header-small.jpg)",
         "car-header-medium": "url(/car-header-medium.jpg)",
         "car-header-big": "url(/car-header-big.jpg)",
+      },
+      padding: {
+        section: "3.75rem",
       }
     },
   },
