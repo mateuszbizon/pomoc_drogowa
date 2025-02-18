@@ -23,6 +23,9 @@ export default {
       },
       padding: {
         section: "3.75rem",
+      },
+      margin: {
+        title: "3.75rem"
       }
     },
   },
