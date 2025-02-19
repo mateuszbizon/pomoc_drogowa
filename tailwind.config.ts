@@ -15,6 +15,7 @@ export default {
         "light": "var(--light)",
         "light2": "var(--light2)",
         "green": "var(--green)",
+        "grey": "var(--grey)",
       },
       backgroundImage: {
         "car-header-small": "url(/car-header-small.jpg)",
