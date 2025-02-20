@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
+import { Textarea } from '../ui/textarea'
 
 function ContactForm() {
     const form = useForm<ContactSchema>({
@@ -58,7 +59,7 @@ function ContactForm() {
                     <FormItem>
                         <FormLabel>Opis zdarzenia</FormLabel>
                         <FormControl>
-                            <Input placeholder="Opis zdarzenia" {...field} />
+                            <Textarea placeholder='Opis zdarzenia' {...field} className='resize-none' />
                         </FormControl>
                         <FormMessage />
                     </FormItem>
