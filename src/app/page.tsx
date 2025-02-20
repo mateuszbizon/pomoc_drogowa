@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import PhotoGallerySection from "@/components/PhotoGallerySection";
 import ServicesSection from "@/components/ServicesSection";
@@ -14,6 +15,7 @@ export default function Home() {
             <WhyusSection />
             <PhotoGallerySection />
         </main>
+        <Footer />
     </>
   );
 }

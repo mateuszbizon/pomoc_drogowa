@@ -11,7 +11,8 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-main-orange hover:bg-main-orange-hover text-black uppercase font-semibold",
         icon: "bg-transparent text-white rounded-full",
-        link: "text-main-orange hover:text-main-orange-hover"
+        link: "text-main-orange hover:text-main-orange-hover",
+        link2: "text-white hover:text-main-orange-hover",
       },
       size: {
         default: "px-6 py-3",
