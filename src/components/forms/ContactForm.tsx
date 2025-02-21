@@ -1,15 +1,17 @@
 "use client"
 
 import { contactSchema, ContactSchema } from '@/validations/contactSchema'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 import { Textarea } from '../ui/textarea'
+import { sendContact } from '@/actions/sendContact'
 
 function ContactForm() {
+    const [isSubmitting, setIsSubmitting] = useState(false)
     const form = useForm<ContactSchema>({
         resolver: zodResolver(contactSchema),
         defaultValues: {
@@ -19,8 +21,13 @@ function ContactForm() {
         }
     })
 
-    function onSubmit(data: ContactSchema) {
-        console.log(data)
+    async function onSubmit(data: ContactSchema) {
+        setIsSubmitting(true)
+        const result = await sendContact(data)
+
+        console.log(result)
+        alert(result.message)
+        setIsSubmitting(false)
     }
 
   return (
@@ -65,7 +72,7 @@ function ContactForm() {
                     </FormItem>
                 )}
             />
-            <Button type="submit" className='w-full'>Wyślij</Button>
+            <Button type="submit" className='w-full' disabled={isSubmitting}>{isSubmitting ? "Wysyłanie..." : "Wyślij"}</Button>
         </form>
     </Form>
   )
