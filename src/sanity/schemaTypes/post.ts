@@ -26,5 +26,10 @@ export const postType = defineType({
             type: 'markdown',
             validation: (rule) => rule.required(),
         }),
+        defineField({
+            name: 'image',
+            type: 'image',
+            validation: (rule) => rule.required(),
+        }),
     ]
 })
