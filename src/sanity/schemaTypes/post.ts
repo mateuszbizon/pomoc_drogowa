@@ -18,7 +18,12 @@ export const postType = defineType({
         defineField({
             name: 'slug',
             type: 'slug',
-            options: {source: 'title'},
+            options: {source: 'tytul'},
+            validation: (rule) => rule.required(),
+        }),
+        defineField({
+            name: 'zawartosc',
+            type: 'markdown',
             validation: (rule) => rule.required(),
         }),
     ]

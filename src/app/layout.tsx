@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import 'easymde/dist/easymde.min.css'
 
 const montSerrat = Montserrat({
     variable: "--font-montserrat",
