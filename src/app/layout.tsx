@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
 
 const montSerrat = Montserrat({
     variable: "--font-montserrat",
@@ -23,7 +22,6 @@ export default function RootLayout({
       <body
         className={`${montSerrat.className} antialiased`}
       >
-        <Nav />
         {children}
       </body>
     </html>
