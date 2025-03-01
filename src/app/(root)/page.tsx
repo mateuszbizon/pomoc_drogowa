@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import PhotoGallerySection from "@/components/PhotoGallerySection";
+import RecentBlogsSection from "@/components/RecentBlogsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyusSection from "@/components/WhyusSection";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <ServicesSection />
         <WhyusSection />
         <PhotoGallerySection />
+        <RecentBlogsSection />
         <ContactSection />
         <Footer />
     </>
