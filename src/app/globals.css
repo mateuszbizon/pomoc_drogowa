@@ -32,4 +32,8 @@
     .normal-text {
         @apply font-medium text-base
     }
+
+    .card {
+        @apply space-y-5 bg-white rounded-lg p-5 shadow-xl
+    }
 }
