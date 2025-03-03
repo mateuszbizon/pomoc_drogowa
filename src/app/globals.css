@@ -36,4 +36,36 @@
     .card {
         @apply space-y-5 bg-white rounded-lg p-5 shadow-xl
     }
+
+    .blog-content h1 {
+        @apply heading1
+    }
+
+    .blog-content h2 {
+        @apply heading2
+    }
+
+    .blog-content h3 {
+        @apply heading3 font-bold
+    }
+
+    .blog-content h4 {
+        @apply heading3
+    }
+
+    .blog-content p {
+        @apply normal-text
+    }
+
+    .blog-content ol {
+        @apply list-disc list-inside pl-2
+    }
+
+    .blog-content ul {
+        @apply list-decimal list-inside pl-2
+    }
+
+    .blog-content {
+        @apply space-y-5     
+    }
 }

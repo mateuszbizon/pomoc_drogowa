@@ -5,3 +5,9 @@ export const RECENT_BLOGS_QUERY = defineQuery(`
         _id, tytul, opis, slug, zawartosc, image
     }    
 `)
+
+export const SINGLE_BLOG_QUERY = defineQuery(`
+    *[_type == "post" && slug.current == $slug][0]{
+        _id, tytul, opis, zawartosc, image, slug
+    }    
+`)
